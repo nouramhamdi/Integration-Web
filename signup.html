@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labbasni - Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="flex flex-wrap justify-between items-center px-4 sm:px-6 lg:px-10 py-4 bg-white shadow-md">
+        <img src="public/logo.png" alt="Labbasni Logo" class="h-8 w-auto">
+        <nav class="hidden md:flex space-x-4 lg:space-x-8 font-semibold order-last md:order-none mt-4 md:mt-0 w-full md:w-auto">
+            <a href="#" class="text-gray-800 text-sm lg:text-base">RECOMMENDATIONS</a>
+            <a href="#" class="text-gray-800 text-sm lg:text-base">PRODUCTS</a>
+            <a href="#" class="text-gray-800 text-sm lg:text-base">FAVORITES</a>
+        </nav>
+        <div class="flex items-center space-x-2 sm:space-x-4">
+            <button class="bg-yellow-400 text-[#131F43] px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-semibold text-sm sm:text-base">SIGN IN</button>
+            <button class="bg-yellow-400 p-1.5 sm:p-2 rounded-lg">
+                <i class="fas fa-shopping-cart text-[#131F43] text-lg sm:text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sign Up Section -->
+    <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-[#131F43] p-6 text-center">
+                <h2 class="text-3xl font-bold text-yellow-400">Create Account</h2>
+                <p class="text-gray-300 mt-2">Join our fashion community today</p>
+            </div>
+
+            <form class="p-8 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-[#131F43] font-semibold mb-2">First Name</label>
+                        <input type="text" 
+                               class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                               placeholder="John">
+                    </div>
+                    <div>
+                        <label class="block text-[#131F43] font-semibold mb-2">Last Name</label>
+                        <input type="text" 
+                               class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                               placeholder="Doe">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[#131F43] font-semibold mb-2">Email Address</label>
+                    <input type="email" 
+                           class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                           placeholder="john@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-[#131F43] font-semibold mb-2">Password</label>
+                    <input type="password" 
+                           class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                           placeholder="••••••••">
+                </div>
+
+                <div class="flex items-center">
+                    <input type="checkbox" class="rounded text-yellow-400 focus:ring-yellow-400">
+                    <label class="ml-2 text-sm text-[#131F43]">I agree to the <a href="#" class="text-yellow-400 hover:underline">Terms & Conditions</a></label>
+                </div>
+
+                <button class="w-full bg-yellow-400 text-[#131F43] py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
+                    Create Account
+                </button>
+
+                <div class="relative mt-6">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-gray-300"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-2 bg-white text-[#131F43]">Or continue with</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-6">
+                    <button class="flex items-center justify-center space-x-2 py-2 border rounded-lg hover:bg-gray-50 transition-colors">
+                        <i class="fab fa-google text-[#131F43]"></i>
+                        <span class="text-[#131F43]">Google</span>
+                    </button>
+                    <button class="flex items-center justify-center space-x-2 py-2 border rounded-lg hover:bg-gray-50 transition-colors">
+                        <i class="fab fa-facebook text-[#131F43]"></i>
+                        <span class="text-[#131F43]">Facebook</span>
+                    </button>
+                </div>
+
+                <p class="text-center text-[#131F43]">
+                    Already have an account? 
+                    <a href="#" class="text-yellow-400 hover:underline">Sign in here</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#131F43] text-white py-12 mt-20">
+        <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
+            <!-- Same footer content as previous page -->
+        </div>
+    </footer>
+</body>
+</html>
