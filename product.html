@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produits - Labbasni</title>
+    <title>Products - Labbasni</title>
    <script src="https://cdn.tailwindcss.com"></script> 
    <!-- <link rel="stylesheet" href="output.css"> -->
    <link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
-<body class="bg-gray-100">
+<body class="bg-white">
 
     <header class="navbar">
         <img src="public/logo.png" alt="Labbasni Logo" class="logo">
         <nav class="hidden md:flex items-center space-x-14">
             <a href="#" class="nav-link">RECOMMENDATIONS</a>
-            <a href="#" class="nav-link active">PRODUCTS</a>
-            <a href="#" class="nav-link">FAVORITES</a>
+            <a href="product.html" class="nav-link active">PRODUCTS</a>
+            <a href="favorits.html" class="nav-link">FAVORITES</a>
+
 
             <div class="relative">
                 <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
@@ -33,13 +34,186 @@
             </button>
         </nav>
     </header>
-
-    <!-- Ajout d'un container pour éviter que le contenu soit sous la navbar -->
-    <div class="mt-20 px-8">
-        <h1 class="text-3xl font-bold text-[#131F43]">Bienvenue sur Labbasni</h1>
-        <p class="text-gray-600 mt-4">Ajoute ici le contenu que tu veux.</p>
+<!-- /patie main  -->
+<main class="p-8">
+    <div class="text-gray-900">
+        <h1 class="text-3xl font-bold">Products</h1>
+        
+        </div>
+        <p class="text-lg text-gray-900 cursor-pointer" onclick="window.history.back()">
+            &lt; Go Back
+        </p>
+        
+</main>
+<div class="container mx-auto px-8 py-12 grid grid-cols-4 gap-8">
+ <!-- Sidebar de filtres corrigé avec Tailwind CSS -->
+<aside class="bg-[#C2C8DA] p-6 rounded-2xl w-64 flex flex-col items-center">
+    <h2 class="text-xl font-bold text-[#131F43] mb-6">FILTER</h2>
+    
+    <!-- Couleur -->
+    <div class="mb-6 w-full">
+        <p class="font-semibold text-[#131F43]">Color</p>
+        <input type="text" class="w-full border border-[#131F43] bg-[#131F43] text-white p-2 rounded-lg" placeholder="Green">
     </div>
+    
+    <!-- Taille -->
+    <div class="mb-6 w-full">
+        <p class="font-semibold text-[#131F43]">Size</p>
+        <input type="text" class="w-full border border-[#131F43] bg-[#131F43] text-white p-2 rounded-lg" placeholder="cm">
+    </div>
+    
+    <!-- Bras -->
+    <div class="mb-6 w-full">
+        <p class="font-semibold text-[#131F43]">Arms</p>
+        <input type="text" class="w-full border border-[#131F43] bg-[#131F43] text-white p-2 rounded-lg" placeholder="cm">
+    </div>
+    
+    <!-- Filtrer par image -->
+    <div class="mb-6 w-full">
+        <p class="font-semibold text-[#131F43]">Filter By Image</p>
+        <div class="w-24 h-24 bg-white border-2 border-[#131F43] flex items-center justify-center rounded-lg">
+            <i class="fas fa-image text-[#131F43] text-3xl"></i>
+        </div>
+        
+        <!-- Icônes upload et caméra -->
+        <div class="flex justify-center space-x-4 mt-4">
+            <button class="bg-[#131F43] p-2 rounded-lg">
+                <i class="fas fa-upload text-white"></i>
+            </button>
+            <button class="bg-[#131F43] p-2 rounded-lg">
+                <i class="fas fa-camera text-white"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Boutons Clear et Apply -->
+    <div class="flex space-x-4 w-full">
+        <button class="bg-[#131F43] text-yellow-400 px-6 py-2 rounded-lg">Clear</button>
+        <button class="bg-yellow-400 text-[#131F43] px-6 py-2 rounded-lg">Apply</button>
+    </div>
+</aside>
 
+<!-- N’oublie pas d’ajouter Font Awesome pour les icônes -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Cette structure suit la mise en page de l'image ! Dis-moi si tu veux ajuster quelque chose ! 🚀 -->
+
+    
+    <!-- Grille de produits -->
+    <section class="col-span-3 grid grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+            <img src="public/shoe.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+            <button class="absolute top-3 right-3">
+                <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+            </button>
+            <div class="p-2">
+                <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                    Air Jordan 1 Low
+                </p>
+                <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                    110 DT
+                </p>
+            </div>
+            <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                Add To Cart
+            </button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+            <img src="public/red dress.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+            <button class="absolute top-3 right-3">
+                <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+            </button>
+            <div class="p-2">
+                <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                    Red Dress
+                </p>
+                <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                    120 DT
+                </p>
+            </div>
+            <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                Add To Cart
+            </button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+            <img src="public/black dress.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+            <button class="absolute top-3 right-3">
+                <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+            </button>
+            <div class="p-2">
+                <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                    Long Black Dress
+                </p>
+                <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                    90 DT
+                </p>
+            </div>
+            <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                Add To Cart
+            </button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+            <img src="public/air jordan.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+            <button class="absolute top-3 right-3">
+                <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+            </button>
+            <div class="p-2">
+                <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                    Air Jordan 1 Low
+                </p>
+                <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                    110 DT
+                </p>
+            </div>
+            <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                Add To Cart
+            </button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+            <img src="public/white dress.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+            <button class="absolute top-3 right-3">
+                <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+            </button>
+            <div class="p-2">
+                <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                    White Dress
+                </p>
+                <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                    150 DT
+                </p>
+            </div>
+            <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                Add To Cart
+            </button>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+            <img src="public/coat.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+            <button class="absolute top-3 right-3">
+                <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+            </button>
+            <div class="p-2">
+                <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                    Coats & Jackets
+                </p>
+                <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                    230 DT
+                </p>
+            </div>
+            <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                Add To Cart
+            </button>
+        </div>
+    </section>
+</div>
+
+
+    
+<!-- partie footer -->
     <footer class="bg-[#131F43] text-white py-12 mt-20">
         <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
             <div>

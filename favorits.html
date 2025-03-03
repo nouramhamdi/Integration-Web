@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites - Labbasni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-white">
+
+    <header class="navbar">
+        <img src="public/logo.png" alt="Labbasni Logo" class="logo">
+        <nav class="hidden md:flex items-center space-x-14">
+            <a href="#" class="nav-link">RECOMMENDATIONS</a>
+            <a href="product.html" class="nav-link">PRODUCTS</a>
+            <a href="#" class="nav-link active">FAVORITES</a>
+
+            <div class="relative">
+                <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                <input type="text" placeholder="Search" class="border-none rounded-xl px-4 py-2 w-[300px] h-[36px] bg-gray-100 text-gray-500 pl-10 focus:outline-none">
+            </div>
+        </nav>
+        <nav class="hidden md:flex items-center space-x-7">
+            <button class="bg-yellow-400 text-[#131F43] w-[100px] h-[45px] flex items-center justify-center rounded-lg font-semibold">
+                SIGN IN
+            </button>
+            <button class="bg-yellow-400 border-2 border-yellow-400 w-[70px] h-[45px] flex items-center justify-center rounded-lg">
+                <i class="fas fa-shopping-cart text-[#131F43] text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="p-8">
+        <div class="text-gray-900">
+            <h1 class="text-3xl font-bold">Your Favorites</h1>
+            
+            </div>
+            <p class="text-lg text-gray-900 cursor-pointer" onclick="window.history.back()">
+                &lt; Go Back
+            </p>
+    </main>
+    <div class="container mx-auto px-8 py-12 grid grid-cols-3 gap-x-1 gap-y-4 justify-center">
+        <section class="col-span-3 grid grid-cols-3 gap-x-1 gap-y-4 justify-items-center">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+                <img src="public/shoe.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+                <button class="absolute top-3 right-3">
+                    <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+                </button>
+                <div class="p-2">
+                    <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                        Air Jordan 1 Low
+                    </p>
+                    <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                        110 DT
+                    </p>
+                </div>
+                <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+                <img src="public/red dress.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+                <button class="absolute top-3 right-3">
+                    <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+                </button>
+                <div class="p-2">
+                    <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                        Red Dress
+                    </p>
+                    <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                        120 DT
+                    </p>
+                </div>
+                <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+                <img src="public/black dress.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+                <button class="absolute top-3 right-3">
+                    <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+                </button>
+                <div class="p-2">
+                    <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                        Long Black Dress
+                    </p>
+                    <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                        90 DT
+                    </p>
+                </div>
+                <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+                <img src="public/air jordan.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+                <button class="absolute top-3 right-3">
+                    <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+                </button>
+                <div class="p-2">
+                    <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                        Air Jordan 1 Low
+                    </p>
+                    <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                        110 DT
+                    </p>
+                </div>
+                <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+                <img src="public/white dress.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+                <button class="absolute top-3 right-3">
+                    <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+                </button>
+                <div class="p-2">
+                    <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                        White Dress
+                    </p>
+                    <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                        150 DT
+                    </p>
+                </div>
+                <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-[250px] h-[280px] relative">
+                <img src="public/coat.jpg" alt="Air Jordan" class="w-full h-[150px] object-cover">
+                <button class="absolute top-3 right-3">
+                    <i class="fas fa-heart text-[#131F43] text-3xl"></i>
+                </button>
+                <div class="p-2">
+                    <p class="font-semibold text-center text-[#131F43] text-[20px] leading-[24px] tracking-[0%] font-sans">
+                        Coats & Jackets
+                    </p>
+                    <p class="font-bold text-center text-[#131F43] text-[24px] leading-[36px] tracking-[0%] font-sans">
+                        230 DT
+                    </p>
+                </div>
+                <button class="bg-yellow-400 w-full py-2 text-[#131F43] font-bold rounded-b-xl mt-auto text-[19px] leading-[36px] tracking-[0%] font-sans">
+                    Add To Cart
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-[#131F43] text-white py-12 mt-20">
+        <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-lg font-bold mb-3">LABBASNI</h2>
+                <p class="text-gray-300 mb-4">Complete your style with awesome clothes from us.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-facebook-f text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-instagram text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-twitter text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-linkedin-in text-[#131F43]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Company</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Contact us</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Services</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Shipping & Returns</a></li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                    <li><a href="#" class="hover:text-white">Gift Cards</a></li>
+                    <li><a href="#" class="hover:text-white">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Contact</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">123 Main St</a></li>
+                    <li><a href="#" class="hover:text-white">info@labbasni.com</a></li>
+                    <li><a href="#" class="hover:text-white">+123 456 7890</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
