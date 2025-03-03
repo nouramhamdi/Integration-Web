@@ -34,76 +34,52 @@
         </nav>
     </header>
 
-    <!-- Ajout d'un container pour éviter que le contenu soit sous la navbar -->
     <main class="py-12 px-6">
         <section class="max-w-7xl mx-auto">
-            <!-- Product Details Title (Larger than Product Name) -->
-            <h2 class="text-4xl font-bold text-[#131F43] mb-6">Product Details</h2>
+            <div class="bg-white rounded-lg shadow-lg p-10 flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/3 flex flex-col items-center mb-6 md:mb-0">
+                    <img src="public/user.jpg" alt="User Image" class="w-40 h-40 rounded-full border-4 border-yellow-500 hover:scale-110 transition-transform duration-300">
+                    <button class="mt-4 bg-[#131F43] text-[#FFC73E] px-4 py-2 rounded-lg hover:bg-[#16254D]">Change Photo</button>
+                </div>
     
-            <!-- Go Back Link -->
-            <a href="#" class="text-[#131F43] font-bold hover:underline">&lt; Go Back</a>
+                <div class="w-full md:w-2/3 pl-0 md:pl-10">
+                    <h2 class="text-3xl font-bold text-[#131F43] mb-2">Mariem Chaabani</h2>
+                    <p class="text-lg text-gray-600">+216 99 123 456</p>
+                    <p class="text-lg text-gray-600">Address: Tunis, Tunisia</p>
+                    <button class="bg-[#131F43] text-[#FFC73E] px-4 py-2 rounded-lg hover:bg-[#16254D]">Edit Profile</button>
     
-            <div class="grid md:grid-cols-2 gap-12 mt-10">
-                <!-- Reduced Image Size -->
-                <img src="public/model4.jpg" alt="Product Image" class="rounded-lg shadow-lg w-[90%] h-auto mx-auto">
-    
-                <div>
-                    <h1 class="text-3xl font-bold mb-4 text-[#131F43]">Product Name</h1>
-                    <p class="text-lg text-[#131F43] mb-2">Women Dress <span class="text-yellow-500">★★★★☆ (200 reviews)</span> 4.9 (2130 reviews)</p>
-                    <ul class="list-none mb-6 text-[#131F43]">
-                        <li class="mb-2">Modern, long dress with stunning design</li>
-                        <li class="mb-2">Premium quality fabric</li>
-                        <li class="mb-2">Available in multiple colors and sizes</li>
-                    </ul>
+                    <div class="mt-6 grid grid-cols-2 gap-6">
+                        <div class="bg-[#C2C8DA] p-4 rounded-lg text-center">
+                            <h3 class="text-xl font-semibold text-[#131F43]">Rented Items</h3>
+                            <p class="text-2xl font-bold text-[#131F43]">12</p>
+                        </div>
+                        <div class="bg-[#C2C8DA] p-4 rounded-lg text-center">
+                            <h3 class="text-xl font-semibold text-[#131F43]">Reserved Items</h3>
+                            <p class="text-2xl font-bold text-[#131F43]">5</p>
+                        </div>
+                    </div>
                     
-                    <h4 class="text-lg font-bold mb-2 text-[#131F43]">Description:</h4>
-                    <div class="mb-6">
-                        <ul class="space-y-2">
-                            <li class="flex items-center text-[#131F43]">
-                                <span class="w-2.5 h-2.5 mr-2 rounded-full bg-[#131F43]"></span>
-                                Makanan yang lengkap dan seimbang, dengan 41 nutrisi penting.
-                            </li>
-                            <li class="flex items-center text-[#131F43]">
-                                <span class="w-2.5 h-2.5 mr-2 rounded-full bg-[#131F43]"></span>
-                                Mengandung antioksidan (vitamin E dan selenium) untuk sistem kekebalan tubuh yang sehat.
-                            </li>
-                            <li class="flex items-center text-[#131F43]">
-                                <span class="w-2.5 h-2.5 mr-2 rounded-full bg-[#131F43]"></span>
-                                Mengandung serat untuk memperlancar pencernaan dan meningkatkan kesehatan usus.
-                            </li>
-                            <li class="flex items-center text-[#131F43]">
-                                <span class="w-2.5 h-2.5 mr-2 rounded-full bg-[#131F43]"></span>
-                                Diperkaya dengan kalsium, fosfor dan vitamin D untuk tulang yang sehat.
-                            </li>
+    
+                    <div class="mt-10">
+                        <h3 class="text-xl font-bold text-[#131F43] mb-4">Wishlist</h3>
+                        <ul class="space-y-3">
+                            <li class="bg-[#C2C8DA] p-3 rounded-lg text-[#131F43]">Item 1</li>
+                            <li class="bg-[#C2C8DA] p-3 rounded-lg text-[#131F43]">Item 2</li>
+                            <li class="bg-[#C2C8DA] p-3 rounded-lg text-[#131F43]">Item 3</li>
                         </ul>
                     </div>
     
-                    <h4 class="text-lg font-bold mb-2 text-[#131F43]">Material:</h4>
-                    <div class="mb-6 flex gap-3">
-                        <button class="px-4 py-2 border rounded-lg bg-[#131F43] text-yellow-500 hover:bg-[#16254D]">Coton</button>
-                        <button class="px-4 py-2 border rounded-lg bg-[#131F43] text-yellow-500 hover:bg-[#16254D]">Wool</button>
-                        <button class="px-4 py-2 border rounded-lg bg-[#131F43] text-yellow-500 hover:bg-[#16254D]">Silk</button>
+                    <div class="mt-10">
+                        <h3 class="text-xl font-bold text-[#131F43] mb-4">Rental History</h3>
+                        <ul class="space-y-3">
+                            <li class="bg-[#C2C8DA] p-3 rounded-lg text-[#131F43]">Evening Dress - 02/2025 - Completed</li>
+                            <li class="bg-[#C2C8DA] p-3 rounded-lg text-[#131F43]">Pearl Jewelry - 01/2025 - Ongoing</li>
+                        </ul>
                     </div>
-    
-                    <h4 class="text-lg font-bold mb-2 text-[#131F43]">Fit Type:</h4>
-                    <div class="mb-6 flex gap-3">
-                        <button class="px-4 py-2 border rounded-lg bg-[#131F43] text-yellow-500 hover:bg-[#16254D]">Adjusted</button>
-                        <button class="px-4 py-2 border rounded-lg bg-[#131F43] text-yellow-500 hover:bg-[#16254D]">Loose</button>
-                        <button class="px-4 py-2 border rounded-lg bg-[#131F43] text-yellow-500 hover:bg-[#16254D]">Straight</button>
-                    </div>
-    
-                    <h4 class="text-lg font-bold mb-2 text-[#131F43]">Maintenance Instructions:</h4>
-                    <div class="mb-6 flex gap-3">
-                        <button class="px-4 py-2 border rounded-lg bg-[#131F43] text-yellow-500 hover:bg-[#16254D]">Ironing</button>
-                        <button class="px-4 py-2 border rounded-lg bg-[#131F43] text-yellow-500 hover:bg-[#16254D]">Washing</button>
-                    </div>
-    
-                    <button class="w-full bg-[#131F43] text-yellow-500 py-3 rounded-lg shadow-lg hover:bg-[#16254D] transition">ADD TO CART</button>
                 </div>
             </div>
         </section>
     </main>
-    
     
 
     <footer class="bg-[#131F43] text-white py-12 mt-20">
