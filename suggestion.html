@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Model</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="navbar">
+        <img src="public/logo.png" alt="Labbasni Logo" class="logo">
+        <nav class="hidden md:flex items-center space-x-14">
+            <a href="#" class="nav-link active text-[#131F43]">RECOMMENDATIONS</a>
+            <a href="#" class="nav-link text-[#131F43]">PRODUCTS</a>
+            <a href="#" class="nav-link text-[#131F43]">FAVORITES</a>
+            <div class="relative">
+                <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                <input type="text" placeholder="Search" class="border-none rounded-xl px-4 py-2 w-[300px] h-[36px] bg-gray-100 text-gray-500 pl-10 focus:outline-none">
+            </div>
+        </nav>
+        <nav class="hidden md:flex items-center space-x-7">
+            <button class="bg-yellow-400 text-[#131F43] w-[100px] h-[45px] flex items-center justify-center rounded-lg font-semibold">
+                SIGN IN
+            </button>
+            <button class="bg-yellow-400 border-2 border-yellow-400 w-[70px] h-[45px] flex items-center justify-center rounded-lg">
+                <i class="fas fa-shopping-cart text-[#131F43] text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+    
+    <section class="flex justify-center items-center min-h-screen">
+        <div class="bg-[#C2C8DA] w-[900px] h-[550px] rounded-[40px] shadow-md p-8">
+          <h2 class="text-3xl font-extrabold text-center text-[#131F43]">SUGGESTION MODEL</h2>
+          <p class="text-center text-[#131F43] mb-6 text-lg italic font-poppins">Choose your preferences here</p>
+      
+          <div class="grid grid-cols-2 gap-6">
+            <!-- Fabric -->
+            <div class="flex items-center">
+              <label class="font-bold w-28 text-lg font-poppins">Fabric</label>
+              <div class="flex space-x-2 w-full">
+                <button class="bg-[#131F43] text-[#C2C8DA] w-full px-4 py-2 rounded-lg text-sm font-poppins">Cotton</button>
+                <button class="bg-[#131F43] text-[#C2C8DA] w-full px-4 py-2 rounded-lg text-sm font-poppins">Wool</button>
+                <button class="bg-[#131F43] text-[#C2C8DA] w-full px-4 py-2 rounded-lg text-sm font-poppins">Silk</button>
+              </div>
+            </div>
+      
+            <!-- Color -->
+            <div class="flex items-center">
+              <label class="font-bold w-28 text-lg font-poppins">Color</label>
+              <select class="bg-[#131F43] text-[#C2C8DA] w-full px-3 py-2 text-sm border rounded-lg font-poppins">
+                <option>Green</option>
+                <option>Red</option>
+                <option>Blue</option>
+              </select>
+            </div>
+      
+            <!-- Fit type -->
+            <div class="flex items-center">
+              <label class="font-bold w-28 text-lg font-poppins">Fit type</label>
+              <div class="flex space-x-2 w-full">
+                <button class="bg-[#131F43] text-[#C2C8DA] w-full px-4 py-2 rounded-lg text-sm font-poppins">Cotton</button>
+                <button class="bg-[#131F43] text-[#C2C8DA] w-full px-4 py-2 rounded-lg text-sm font-poppins">Wool</button>
+                <button class="bg-[#131F43] text-[#C2C8DA] w-full px-4 py-2 rounded-lg text-sm font-poppins">Silk</button>
+              </div>
+            </div>
+      
+            <!-- Category -->
+            <div class="flex items-center">
+              <label class="font-bold w-28 text-lg font-poppins">Category</label>
+              <select class="bg-[#131F43] text-[#C2C8DA] w-full px-3 py-2 text-sm border rounded-lg font-poppins">
+                <option>T-shirt</option>
+                <option>Jeans</option>
+                <option>Jacket</option>
+              </select>
+            </div>
+      
+            <!-- Size -->
+            <div class="flex items-center">
+              <label class="font-bold w-28 text-lg font-poppins">Size</label>
+              <div class="relative w-full">
+                <input type="text" class="bg-[#131F43] text-white w-full px-3 py-2 text-sm border rounded-lg pr-10 font-poppins" placeholder="0">
+                <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#C2C8DA] font-poppins">cm</span>
+              </div>
+            </div>
+      
+            <!-- Chest -->
+            <div class="flex items-center">
+              <label class="font-bold w-28 text-lg font-poppins">Chest</label>
+              <div class="relative w-full">
+                <input type="text" class="bg-[#131F43] text-white w-full px-3 py-2 text-sm border rounded-lg pr-10 font-poppins" placeholder="0">
+                <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#C2C8DA] font-poppins">cm</span>
+              </div>
+            </div>
+      
+            <!-- Arms -->
+            <div class="flex items-center">
+              <label class="font-bold w-28 text-lg font-poppins">Arms</label>
+              <div class="relative w-full">
+                <input type="text" class="bg-[#131F43] text-white w-full px-3 py-2 text-sm border rounded-lg pr-10 font-poppins" placeholder="0">
+                <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#C2C8DA] font-poppins">cm</span>
+              </div>
+            </div>
+      
+            <!-- Hip -->
+            <div class="flex items-center">
+              <label class="font-bold w-28 text-lg font-poppins">Hip</label>
+              <div class="relative w-full">
+                <input type="text" class="bg-[#131F43] text-white w-full px-3 py-2 text-sm border rounded-lg pr-10 font-poppins" placeholder="0">
+                <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#C2C8DA] font-poppins">cm</span>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Boutons Clear et Apply -->
+          <div class="mt-10 flex justify-center space-x-6">
+            <button class="bg-[#131F43] text-[#FFC73E] py-3 px-8 rounded-lg text-lg font-poppins ">Clear</button>
+            <button class="bg-[#FFC73E] text-[#131F43] py-3 px-20 rounded-lg text-lg font-poppins ">Apply</button>
+          </div>
+        </div>
+      </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer class="bg-[#131F43] text-white py-12 mt-20">
+        <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-lg font-bold mb-3">LABBASNI</h2>
+                <p class="text-gray-300 mb-4">Complete your style with awesome clothes from us.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-facebook-f text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-instagram text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-twitter text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-linkedin-in text-[#131F43]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Company</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Contact us</a></li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Quick Link</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Share Location</a></li>
+                    <li><a href="#" class="hover:text-white">Orders Tracking</a></li>
+                    <li><a href="#" class="hover:text-white">Size Guide</a></li>
+                    <li><a href="#" class="hover:text-white">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Legal</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Terms & conditions</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

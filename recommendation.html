@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produits - Labbasni</title>
-   <script src="https://cdn.tailwindcss.com"></script> 
-   <!-- <link rel="stylesheet" href="output.css"> -->
-   <link rel="stylesheet" href="public/style.css">
+    <title>Recommendation - Labbasni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body class="bg-gray-100">
-
     <header class="navbar">
         <img src="public/logo.png" alt="Labbasni Logo" class="logo">
         <nav class="hidden md:flex items-center space-x-14">
-            <a href="#" class="nav-link">RECOMMENDATIONS</a>
-            <a href="#" class="nav-link active">PRODUCTS</a>
-            <a href="#" class="nav-link">FAVORITES</a>
-
+            <a href="#" class="nav-link active text-[#131F43]">RECOMMENDATIONS</a>
+            <a href="#" class="nav-link text-[#131F43]">PRODUCTS</a>
+            <a href="#" class="nav-link text-[#131F43]">FAVORITES</a>
             <div class="relative">
                 <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
                 <input type="text" placeholder="Search" class="border-none rounded-xl px-4 py-2 w-[300px] h-[36px] bg-gray-100 text-gray-500 pl-10 focus:outline-none">
@@ -33,13 +29,37 @@
             </button>
         </nav>
     </header>
-
-    <!-- Ajout d'un container pour éviter que le contenu soit sous la navbar -->
-    <div class="mt-20 px-8">
-        <h1 class="text-3xl font-bold text-[#131F43]">Bienvenue sur Labbasni</h1>
-        <p class="text-gray-600 mt-4">Ajoute ici le contenu que tu veux.</p>
-    </div>
-
+    
+    <section class="max-w-4xl mx-auto py-10">
+        <h1 class="text-4xl font-extrabold text-[#131F43]">Recommendation</h1>
+        <a href="#" class="text-[#131F43] block mt-2">&lt; Go Back</a>
+        
+        <div class="bg-[#C2C8DA] w-[900px] h-[550px] rounded-[40px] shadow-md p-8">
+            <h2 class="text-3xl font-extrabold text-center text-[#131F43]">BASED ON YOUR PREFERENCES</h2>
+            <p class="text-center text-[#131F43] mb-6 text-lg italic font-poppins">Live for influential and innovative fashion!</p>
+            
+            <div class="flex justify-center items-center gap-6 mt-4">
+                <button class="text-2xl text-[#131F43] arrow-button">⬅</button>
+                <div>
+                    <img src="/public/Recommendation.png" alt="Dresses" class="w-40 h-60 object-cover rounded-md">
+                    <p class="text-center text-[#131F43]">Dresses</p>
+                </div>
+                <div>
+                    <img src="/public/Recommendation.png" alt="Dresses" class="w-40 h-60 object-cover rounded-md">
+                    <p class="text-center text-[#131F43]">Dresses</p>
+                </div>
+                <button class="text-2xl text-[#131F43]">➡</button>
+            </div>
+            
+            <div class="text-center mt-4">
+                <button class="bg-yellow-500 text-[#131F43] py-2 px-4 rounded" onclick="window.location.href='suggestion.html';">
+                    Choose Your Preferences
+                </button>
+            </div>
+            
+        </div>
+    </section>
+    
     <footer class="bg-[#131F43] text-white py-12 mt-20">
         <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
             <div>
@@ -90,6 +110,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
