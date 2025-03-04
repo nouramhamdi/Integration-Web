@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labbasni - Fashion</title>
+    <title>Labbasni - Sign Up</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
     <header class="flex justify-between items-center px-6 lg:px-12 py-4 bg-white shadow-md">
         <a href="./main.html"><img src="public/logo.png" alt="Labbasni Logo" class="h-10"></a>
         <nav class="hidden md:flex space-x-6 font-semibold text-gray-800">
@@ -22,62 +23,36 @@
             </a>
         </div>
     </header>
-    
-    <section class="w- mx-7 my-10  px-4 sm:px-6 lg:px-8 my-6 sm:my-8 lg:my-10 ">
-        <div class="bg-[#C2C8DA] p-10 flex items-center justify-between rounded-lg relative h-[600px] w-full   ">
-            <div >
-                <h1 class="text-5xl font-extrabold text-[#131F43] max-w-xs lg:text-7xl  sm:text-6xl">LET’S EXPLORE UNIQUE CLOTHES.</h1>
-                <p class="text-[#131F43] mt-2  font-extrabold">Live for influential and innovative fashion!</p>
-                <button class="mt-4 bg-yellow-400 px-6 py-2 rounded-lg text-[#131F43] font-semibold sm:font-bold">SHOP NOW</button>
+
+    <!-- Sign Up Section -->
+    <section class="flex justify-center items-center min-h-screen p-6">
+        <div class="max-w-lg w-full bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-[#131F43] p-6 text-center">
+                <h2 class="text-3xl font-bold text-yellow-400">Sign in</h2>
+                <p class="text-gray-300 mt-1">Welcome back</p>
             </div>
-            <img src="public/back.png" alt="Fashion Model" class="h-96 absolute bottom-0 right-7 lg:right-28 sm:w-auto sm:right-[-50px] lg:h-[500px]">
-        </div>
-        
-        <h2 class="text-3xl font-bold mt-10">NEW <span class="text-yellow-400">PRODUCTS</span></h2>
-        <div class="grid grid-cols-3 gap-6 mt-6">
-            <div>
-                <img src="./public/product1.jpeg" class="w-full h-fit object-cover rounded-lg max-w-sm">
-                <p class="text-center font-semibold mt-2">Coats & Jackets</p>
-                <button class="bg-yellow-400 px-4 py-1 rounded mt-2">Explore Now</button>
-            </div>
-            <div>
-                <img src="./public/product2.jpeg" class="w-full h-fit object-cover rounded-lg max-w-sm">
-                <p class="text-center font-semibold mt-2">Casual Outfit</p>
-                <button class="bg-yellow-400 px-4 py-1 rounded mt-2">Explore Now</button>
-            </div>
-            <div>
-                <img src="./public/product2.jpeg" class="w-full h-fit object-cover rounded-lg max-w-sm">
-                <p class="text-center font-semibold mt-2">Dresses</p>
-                <button class="bg-yellow-400 px-4 py-1 rounded mt-2">Explore Now</button>
-            </div>
-        </div>
-        
-        <div class="bg-[#FFC73E] p-6 mt-12 rounded-lg text-left">
-            <h2 class="text-4xl font-extrabold text-[#131F43] uppercase mt-3 lg:text-6xl  sm:text-5xl">BASED ON YOUR PREFERENCES</h2>
-            <p class="text-gray-800 mt-10 font-bold text-xl">Experience finding the best products based on your preferences.</p>
-            <button  class="mt-10 mb-4 bg-[#131F43] px-6 py-2 rounded-lg text-[#FFC73E] font-semibold">SHOP NOW</button>
-        </div>
-        
-        <h2 class="text-3xl font-bold mt-10">MOST <span class="text-yellow-400">POPULAR</span></h2>
-        <div class="grid grid-cols-3 gap-6 mt-6">
-            <div>
-                <img src="./public/product1.jpeg" class="w-full h-fit  object-cover rounded-lg max-w-sm">
-                <p class="text-center font-semibold mt-2">Red Dress</p>
-                <button class="bg-yellow-400 px-4 py-1 rounded mt-2">Explore Now</button>
-            </div>
-            <div>
-                <img src="./public/product2.jpeg" class="w-full h-fit object-cover rounded-lg max-w-sm">
-                <p class="text-center font-semibold mt-2">Long Black Dress</p>
-                <button class="bg-yellow-400 px-4 py-1 rounded mt-2">Explore Now</button>
-            </div>
-            <div>
-                <img src="./public/product2.jpeg" class="w-full h-fit object-cover rounded-lg max-w-sm">
-                <p class="text-center font-semibold mt-2">White Dress</p>
-                <button class="bg-yellow-400 px-4 py-1 rounded mt-2">Explore Now</button>
-            </div>
+            <form class="p-8 space-y-6">
+                <div>
+                    <label class="block text-[#131F43] font-semibold mb-2">Email Address</label>
+                    <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="john@example.com">
+                </div>
+                <div>
+                    <label class="block text-[#131F43] font-semibold mb-2">Password</label>
+                    <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="••••••••">
+                </div>
+                <a href="./main.html">
+
+               <button class="w-full bg-yellow-400 text-[#131F43] py-3 rounded-lg font-semibold hover:bg-yellow-500 transition">Sign in</button>
+                </a>
+                <p class="text-center text-[#131F43]">Don't have an account? <a href="./signup.html" class="text-yellow-400 hover:underline">Sign up here</a></p>
+            </form>
         </div>
     </section>
-    
+
+ 
+
+
+    <!-- Footer -->
     <footer class="bg-[#131F43] text-white py-12 mt-20">
         <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
             <div>
