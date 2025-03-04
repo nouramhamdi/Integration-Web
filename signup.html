@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labbasni - Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-6 lg:px-12 py-4 bg-white shadow-md">
+        <a href="./main.html"><img src="public/logo.png" alt="Labbasni Logo" class="h-10"></a>
+        <nav class="hidden md:flex space-x-6 font-semibold text-gray-800">
+            <a href="./recommendation.html" class="hover:text-yellow-400">RECOMMENDATIONS</a>
+            <a href="./product.html" class="hover:text-yellow-400">PRODUCTS</a>
+            <a href="./favorits.html" class="hover:text-yellow-400">FAVORITES</a>
+        </nav>
+        <div class="relative">
+            <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+            <input type="text" placeholder="Search" class="border-none rounded-xl px-4 py-2 w-[300px] h-[36px] bg-gray-100 text-gray-500 pl-10 focus:outline-none">
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="./signin.html" class="bg-yellow-400 text-[#131F43] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500">SIGN IN</a>
+            <a href="./payment.html" class="bg-yellow-400 p-2 rounded-lg hover:bg-yellow-500">
+                <i class="fas fa-shopping-cart text-[#131F43] text-lg"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Sign Up Section -->
+    <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-[#131F43] p-6 text-center">
+                <h2 class="text-3xl font-bold text-yellow-400">Create Account</h2>
+                <p class="text-gray-300 mt-2">Join our fashion community today</p>
+            </div>
+
+            <form class="p-8 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-[#131F43] font-semibold mb-2">First Name</label>
+                        <input type="text" 
+                               class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                               placeholder="John">
+                    </div>
+                    <div>
+                        <label class="block text-[#131F43] font-semibold mb-2">Last Name</label>
+                        <input type="text" 
+                               class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                               placeholder="Doe">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[#131F43] font-semibold mb-2">Email Address</label>
+                    <input type="email" 
+                           class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                           placeholder="john@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-[#131F43] font-semibold mb-2">Password</label>
+                    <input type="password" 
+                           class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                           placeholder="••••••••">
+                </div>
+
+                <div class="flex items-center">
+                    <input type="checkbox" class="rounded text-yellow-400 focus:ring-yellow-400">
+                    <label class="ml-2 text-sm text-[#131F43]">I agree to the <a href="#" class="text-yellow-400 hover:underline">Terms & Conditions</a></label>
+                </div>
+
+                <button onclick="window.location.href='signin.html';" class="w-full bg-yellow-400 text-[#131F43] py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
+                    Create Account
+                </button>
+
+                <div class="relative mt-6">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-gray-300"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-2 bg-white text-[#131F43]">Or continue with</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-6">
+                    <button class="flex items-center justify-center space-x-2 py-2 border rounded-lg hover:bg-gray-50 transition-colors">
+                        <i class="fab fa-google text-[#131F43]"></i>
+                        <span class="text-[#131F43]">Google</span>
+                    </button>
+                    <button class="flex items-center justify-center space-x-2 py-2 border rounded-lg hover:bg-gray-50 transition-colors">
+                        <i class="fab fa-facebook text-[#131F43]"></i>
+                        <span class="text-[#131F43]">Facebook</span>
+                    </button>
+                </div>
+
+                <p class="text-center text-[#131F43]">
+                    Already have an account? 
+                    <a href="./signin.html" class="text-yellow-400 hover:underline">Sign in here</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#131F43] text-white py-12 mt-20">
+        <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-lg font-bold mb-3">LABBASNI</h2>
+                <p class="text-gray-300 mb-4">Complete your style with awesome clothes from us.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-facebook-f text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-instagram text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-twitter text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-linkedin-in text-[#131F43]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Company</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Contact us</a></li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Quick Link</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Share Location</a></li>
+                    <li><a href="#" class="hover:text-white">Orders Tracking</a></li>
+                    <li><a href="#" class="hover:text-white">Size Guide</a></li>
+                    <li><a href="#" class="hover:text-white">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Legal</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Terms & conditions</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

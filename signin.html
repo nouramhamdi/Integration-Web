@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labbasni - Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-6 lg:px-12 py-4 bg-white shadow-md">
+        <a href="./main.html"><img src="public/logo.png" alt="Labbasni Logo" class="h-10"></a>
+        <nav class="hidden md:flex space-x-6 font-semibold text-gray-800">
+            <a href="./recommendation.html" class="hover:text-yellow-400">RECOMMENDATIONS</a>
+            <a href="./product.html" class="hover:text-yellow-400">PRODUCTS</a>
+            <a href="./favorits.html" class="hover:text-yellow-400">FAVORITES</a>
+        </nav>
+        <div class="relative">
+            <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+            <input type="text" placeholder="Search" class="border-none rounded-xl px-4 py-2 w-[300px] h-[36px] bg-gray-100 text-gray-500 pl-10 focus:outline-none">
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="./signin.html" class="bg-yellow-400 text-[#131F43] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500">SIGN IN</a>
+            <a href="./payment.html" class="bg-yellow-400 p-2 rounded-lg hover:bg-yellow-500">
+                <i class="fas fa-shopping-cart text-[#131F43] text-lg"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Sign Up Section -->
+    <section class="flex justify-center items-center min-h-screen p-6">
+        <div class="max-w-lg w-full bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-[#131F43] p-6 text-center">
+                <h2 class="text-3xl font-bold text-yellow-400">Sign in</h2>
+                <p class="text-gray-300 mt-1">Welcome back</p>
+            </div>
+            <form class="p-8 space-y-6">
+                <div>
+                    <label class="block text-[#131F43] font-semibold mb-2">Email Address</label>
+                    <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="john@example.com">
+                </div>
+                <div>
+                    <label class="block text-[#131F43] font-semibold mb-2">Password</label>
+                    <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="••••••••">
+                </div>
+
+               <button onclick="window.location.href='signin.html';" class="w-full bg-yellow-400 text-[#131F43] py-3 rounded-lg font-semibold hover:bg-yellow-500 transition">Sign in</button>
+                <p class="text-center text-[#131F43]">Don't have an account? <a href="./signup.html" class="text-yellow-400 hover:underline">Sign up here</a></p>
+            </form>
+        </div>
+    </section>
+
+ 
+
+
+    <!-- Footer -->
+    <footer class="bg-[#131F43] text-white py-12 mt-20">
+        <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-lg font-bold mb-3">LABBASNI</h2>
+                <p class="text-gray-300 mb-4">Complete your style with awesome clothes from us.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-facebook-f text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-instagram text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-twitter text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-linkedin-in text-[#131F43]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Company</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Contact us</a></li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Quick Link</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Share Location</a></li>
+                    <li><a href="#" class="hover:text-white">Orders Tracking</a></li>
+                    <li><a href="#" class="hover:text-white">Size Guide</a></li>
+                    <li><a href="#" class="hover:text-white">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Legal</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Terms & conditions</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
