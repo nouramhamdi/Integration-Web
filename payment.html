@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shopping Cart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="flex justify-between items-center px-6 lg:px-12 py-4 bg-white shadow-md">
+        <a href="./main.html"><img src="public/logo.png" alt="Labbasni Logo" class="h-10"></a>
+        <nav class="hidden md:flex space-x-6 font-semibold text-gray-800">
+            <a href="./recommendation.html" class="hover:text-yellow-400">RECOMMENDATIONS</a>
+            <a href="./product.html" class="hover:text-yellow-400">PRODUCTS</a>
+            <a href="./favorits.html" class="hover:text-yellow-400">FAVORITES</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <a href="./signin.html" class="bg-yellow-400 text-[#131F43] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500">SIGN IN</a>
+            <a href="./payment.html" class="bg-yellow-400 p-2 rounded-lg hover:bg-yellow-500">
+                <i class="fas fa-shopping-cart text-[#131F43] text-lg"></i>
+            </a>
+        </div>
+    </header>
+    
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-white p-6 rounded-lg shadow-lg flex space-x-8 w-[900px]">
+            <!-- Shopping Cart -->
+            <div class="w-1/2">
+                <div class="flex items-center mb-4">
+                    <a href="./main.html">
+
+                    <button class="text-[#131F43] mr-2"><i class="fas fa-arrow-left"></i></button>
+                    </a>
+                    <h2 class="text-xl font-semibold">Shopping Continue</h2>
+                </div>
+                <hr class="mb-4">
+                <p class="text-gray-600 mb-4">You have 3 items in your cart</p>
+                <div class="space-y-4">
+                    <!-- Cart Item -->
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg shadow">
+                        <img src="./public/air jordan.jpg" alt="Air Jordan" class="w-16 h-16 rounded">
+                        <span class="font-medium">Air Jordan 1 Low</span>
+                        <div class="flex items-center space-x-2">
+                            <button class="text-[#131F43]"><i class="fas fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="text-[#131F43]"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <span class="font-semibold">$681</span>
+                        <button class="text-[#131F43]"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card Details -->
+            <div class="w-1/2 bg-[#131F43] text-white p-6 rounded-lg shadow-lg relative">
+                <h2 class="text-lg font-semibold text-yellow-400 mb-4">Card Details</h2>
+                <div class="flex space-x-2 mb-4">
+                    <img src="./public/mastercard.png" class="w-10 h-6">
+                    <img src="./public/visa.png" class="w-10 h-6">
+                    <img src="./public/paypal.png" class="w-10 h-6">
+                    <button class="px-2 py-1 bg-gray-700 rounded">See all</button>
+                </div>
+                <label class="block text-yellow-400">Name on card</label>
+                <input type="text" placeholder="Name on card" class="w-full p-2 rounded bg-yellow-400 text-gray-900 mb-2">
+                
+                <label class="block text-yellow-400">Card Number</label>
+                <input type="text" placeholder="1111 2222 3333 4444" class="w-full p-2 rounded bg-yellow-400 text-gray-900 mb-2">
+                
+                <div class="flex space-x-2">
+                    <div class="w-1/2">
+                        <label class="block text-yellow-400">Expiration date</label>
+                        <input type="text" placeholder="mm/yy" class="w-full p-2 rounded bg-yellow-400 text-gray-900">
+                    </div>
+                    <div class="w-1/2">
+                        <label class="block text-yellow-400">CVV</label>
+                        <input type="text" placeholder="123" class="w-full p-2 rounded bg-yellow-400 text-gray-900">
+                    </div>
+                </div>
+                <hr class="my-4 border-gray-400">
+                <div class="flex justify-between text-lg font-semibold">
+                    <span class="text-yellow-400">Subtotal</span>
+                    <span>$1,668</span>
+                </div>
+                <div class="flex justify-between text-lg font-semibold">
+                    <span class="text-yellow-400">Shipping</span>
+                    <span>$4</span>
+                </div>
+                <div class="flex justify-between text-lg font-bold mt-2">
+                    <span class="text-yellow-400">Total (Tax incl.)</span>
+                    <span>$1,672</span>
+                </div>
+                <a href="./thankyou.html">
+
+                <button class="w-full bg-yellow-400 text-gray-900 font-semibold py-2 mt-4 rounded-lg flex justify-between px-4">
+                    <span>$1,672</span>
+                    <span>Checkout →</span>
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-[#131F43] text-white py-12 mt-20">
+        <div class="container mx-auto px-8 grid grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-lg font-bold mb-3">LABBASNI</h2>
+                <p class="text-gray-300 mb-4">Complete your style with awesome clothes from us.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-facebook-f text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-instagram text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-twitter text-[#131F43]"></i>
+                    </a>
+                    <a href="#" class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-lg">
+                        <i class="fab fa-linkedin-in text-[#131F43]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Company</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Contact us</a></li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Quick Link</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Share Location</a></li>
+                    <li><a href="#" class="hover:text-white">Orders Tracking</a></li>
+                    <li><a href="#" class="hover:text-white">Size Guide</a></li>
+                    <li><a href="#" class="hover:text-white">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-gray-400 font-semibold mb-3">Legal</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white">Terms & conditions</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
